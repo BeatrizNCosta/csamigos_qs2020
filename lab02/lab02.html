@@ -1,0 +1,216 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Neuton:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link rel="stylesheet" type="text/css" href="./index.css">		
+	<title>Laboratório 02</title>
+</head>
+
+<body>
+	<header>
+		<h1 class="zoomInDown-element">Laboratório 02</h1>
+	</header>
+		
+	<section>		
+		<article>
+			<div id="main_div">
+				<h1>Objetivos:</h1>
+				<!-- this is a html comment -->
+				<ul> <!-- this is an unordered list -->
+					<li>Iniciar os trabalhos com o Google Colab e o OpenCV; <!-- this is a list item -->
+					<li>Visualizar imagens e alterar a resolução delas;</li>
+					<li>Gravar um Vídeo e mostrá-lo no Colab;</li>
+				</ul>
+				<p>&nbsp;</p> <!-- blank line -->
+				
+				<h1>INSTRUÇÕES:</h1>
+				<ul>
+					<li>Montem uma foto geral com TODOS os integrantes do GRUPO, sendo que cada um deve usar uma roupa de
+						cor diferente, melhor se for com as cores Vermelho, Verde e Azul destacadas. Cuidem para a iluminação ficar
+						boa. Logicamente podem usar qualquer editor de imagem para “Compor” as fotos individuais que cada um
+						vai tirar...</li>
+					<li>Façam uma segunda foto-montagem, substituindo cada um por um “Avatar”. Meu “Avatar” por exemplo, é o
+						Pikachu... Novamente, podem editar a gosto.</li>
+					<li>Filmem e editem DOIS vídeos: um com mudanças lentas de movimento
+						 e outro com mudanças rápidas de movimento.
+						 Em cada um dos vídeos os membros do grupo DEVEM ser diferentes. Podem ser apenas dois membros,
+						um em cada vídeo, e sugiro escolherem os que possuem as melhores câmeras.</li>
+					<li>Apresentem as imagens originais e as versões em P&B delas;</li>
+					<li>Apresentem as imagens com duas resoluções diferentes cada;</li>
+					<li>Apresentem os vídeos com mudança de resolução, 25% e 50% dos originais;</li>
+					<li>Descrevam todos os procedimentos realizados.
+						i) Não se esqueçam de fazer SEMPRE a Áudio Descrição do que está sendo mostrado no relatório em
+						HTML!</li>
+					<li>Disponibilize o código .ipynb do notebook e coloque o “link” dele no seu html5.</li>
+					<li>TUDO, textos, imagens e vídeos só no .html, e já linked na página de rosto do seu grupo, sendo que só devese submeter no Tidia4 o link atualizado desta página, logicamente com todos os arquivos dela.</li>
+					<li>Se a página de vocês estiver no GitHub, facilita minha correção, pois ele tem um servidor html, que permite a visualização lá mesmo.</li>
+				</ul>
+
+					
+				</div>			
+			</div>					
+		
+			<div id="main_div">
+				<h1>Foto Original dos Integrantes do Grupo</h1>
+				<audio controls>
+					<source src="./audio1.ogg" type="audio/ogg">
+				</audio>
+				<p>&nbsp;</p> 
+				<img src="./foto_grupo.jpg" width="470" height="466"/>
+				<h1>Resolução: 470x466</h1>
+			</div>
+			
+			<div id="main_div">
+				<h1>Foto dos Integrantes do Grupo em Preto e Branco</h1>
+				<audio controls>
+					<source src="./audio2.ogg" type="audio/ogg">
+				</audio>
+				<p>&nbsp;</p> 
+				<img src="./foto_grupo_pb.jpg" width="470" height="466"/>
+				<h1>Resolução: 470x466</h1>
+			</div>
+			
+			<div id="main_div">
+				<h1>Imagem Original dos Avatares</h1>
+				<audio controls>
+					<source src="./audio3.ogg" type="audio/ogg">
+				</audio>
+				<p>&nbsp;</p> 
+				<img src="./avatar.jpg" width="597" height="497"/>
+				<h1>Resolução: 597x497</h1>
+			</div>		
+			
+			<div id="main_div">
+				<h1>Imagem dos Avatares em Preto e Branco</h1>
+				<audio controls>
+					<source src="./audio4.ogg" type="audio/ogg">
+				</audio>
+				<p>&nbsp;</p> 
+				<img src="./avatar_pb.jpg" width="597" height="497"/>
+				<h1>Resolução: 597x497</h1>
+			</div>		
+			
+			<div id="main_div">
+				<h1>Imagens Coloridas Redimensionadas em 1,5x</h1>
+				<audio controls>
+					<source src="./audio5.ogg" type="audio/ogg">
+				</audio>
+				<p>&nbsp;</p> 
+				<img src="./foto_grupo_maior.jpg" width="705" height="699"/>
+				<h1>Resolução: 705x699</h1>
+				<img src="./avatar_maior.jpg" width="746" height="896"/>
+				<h1>Resolução: 746x896</h1>
+			</div>
+			
+			<div id="main_div">
+				<h1>Imagens em Preto e Branco Redimensionadas em 1,5x</h1>
+				<audio controls>
+					<source src="./audio6.ogg" type="audio/ogg">
+				</audio>
+				<p>&nbsp;</p> 
+				<img src="./foto_grupo_pb_maior.jpg" width="705" height="699"/>
+				<h1>Resolução: 705x699</h1>
+				<img src="./avatar_pb_maior.jpg" width="746" height="896"/>
+				<h1>Resolução: 746x896</h1>
+			</div>
+			
+			<div id="main_div">
+				<h1>Imagens Coloridas Redimensionadas em 0,5x</h1>
+				<audio controls>
+					<source src="./audio7.ogg" type="audio/ogg">
+				</audio>
+				<p>&nbsp;</p> 
+				<img src="./foto_grupo_menor.jpg" width="235" height="233"/>
+				<h1>Resolução: 235x233</h1>
+				<img src="./avatar_menor.jpg" width="298" height="248"/>
+				<h1>Resolução: 298x248</h1>
+			</div>
+			
+			<div id="main_div">
+				<h1>Imagens em Preto e Branco Redimensionadas em 0,5x</h1>
+				<audio controls>
+					<source src="./audio8.ogg" type="audio/ogg">
+				</audio>
+				<p>&nbsp;</p> 
+				<img src="./foto_grupo_pb_menor.jpg" width="235" height="233"/>
+				<h1>Resolução: 235x233</h1>
+				<img src="./avatar_pb_menor.jpg" width="298" height="248"/>
+				<h1>Resolução: 298x248</h1>
+			</div>
+			
+			<div id="main_div">
+				<h1>Vídeos com a Resolução Original</h1>
+				<audio controls>
+					<source src="./audio9.ogg" type="audio/ogg">
+				</audio>
+				<audio controls>
+					<source src="./audio10.ogg" type="audio/ogg">
+				</audio>
+				<p>&nbsp;</p> 
+				<h3>Vídeo Lento</h3>
+				<video width="848" height="480" controls>
+					<source src="./videoLento.mp4" type="video/mp4">					
+				</video>
+				<p>&nbsp;</p> 
+				<h3>Vídeo Rápido</h3>
+				<video width="640" height="352" controls>
+					<source src="./videoRapido.mp4" type="video/mp4">					
+				</video>
+				</iframe>
+			</div>
+			
+			<div id="main_div">
+				<h1>Vídeos com Resolução em 50%</h1>
+				<audio controls>
+					<source src="./audio11.ogg" type="audio/ogg">
+				</audio>
+				<p>&nbsp;</p> 
+				<h3>Vídeo Lento</h3>
+				<video width="50%" height="50%" controls>
+					<source src="./videoLento.mp4" type="video/mp4">					
+				</video>
+				<p>&nbsp;</p> 
+				<h3>Vídeo Rápido</h3>
+				<video width="50%" height="50%" controls>
+					<source src="./videoRapido.mp4" type="video/mp4">					
+				</video>
+				</iframe>
+			</div>
+			
+			<div id="main_div">
+				<h1>Vídeos com Resolução em 25%</h1>
+				<audio controls>
+					<source src="./audio12.ogg" type="audio/ogg">
+				</audio>
+				<p>&nbsp;</p> 
+				<h3>Vídeo Lento</h3>
+				<video width="25%" height="25%" controls>
+					<source src="./videoLento.mp4" type="video/mp4">					
+				</video>
+				<p>&nbsp;</p> 
+				<h3>Vídeo Rápido</h3>
+				<video width="25%" height="25%" controls>
+					<source src="./videoRapido.mp4" type="video/mp4">					
+				</video>
+				</iframe>
+			</div>	
+
+			<div id="main_div">
+				<h1>Código Utilizado no Processamento das Imagens e dos Vídeos</h1>
+				<audio controls>
+					<source src="./audio13.ogg" type="audio/ogg">
+				</audio>
+			</div>			
+											
+		</article>
+		
+	</section>
+
+</body>
+	<script src="../jquery-3.4.1.min.js"></script>	
+</html>
