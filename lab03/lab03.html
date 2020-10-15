@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Neuton:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link rel="stylesheet" type="text/css" href="../index.css">		
+	<title>Laboratório 03</title>
+</head>
+
+<body>
+	<header>
+		<h1 class="zoomInDown-element">Laboratório 03</h1>
+	</header>
+		
+	<section>		
+		<article>
+			<div id="main_div">
+				<h1>Objetivos:</h1>				
+				<ul> 
+					<li>Codificação de Imagens por transformada DCT;</li>
+					<li>Iniciação à Animação com o Blender.</li>										
+				</ul>
+				<p>&nbsp;</p>
+				
+				<h1>INSTRUÇÕES:</h1>
+				<ul>
+					<li>Com uma imagem de cada integrante do grupo e com a foto-montagem de todos os do grupo:</li>
+						<ul>
+							<li>Separa os canais e re-arranja para formar imagem RGB</li>
+							<li>Imprime cores trocadas (BGR) e reais (RGB)</li>
+							<li>Converte para os formatos YCrCb e HSV</li>
+							<li>Separação das Camadas RGB individualmente</li>
+							<li>Separação dos Canais YCbCr</li>
+						</ul>
+					<li>Com cada uma das fotos dos integrantes do grupo e para a foto-montagem do grupo todo faça a compressão de imagens com perdas;</li>
+					<li>Leia o tamanho dos arquivos (em bytes) e faça uma tabela comparando os tamanhos originais e os comprimidos e calcule a porcentagem de compressão de cada arquivo destes tamanhos na tabela construída;</li>
+					<li>Calcule a DCT em bloco de 8x8 da imagem;</li>
+					<li>Zere manualmente da diagonal da DCT (e duas acima) as componentes AC;</li>
+					<li>Compare e comente as imagens do bloco original e reconstruída.</li>
+					<li>Fazer uma animação feita em Blender com a melhoria da iluminação sugerida.</li>
+				</ul>
+
+					
+				</div>			
+			</div>					
+		
+			<div id="main_div">
+				<h1>Fotos em BGR e RGB dos integrantes do grupo e da foto-montagem</h1>
+				<audio controls>
+					<source src="./audio1.ogg" type="audio/ogg">
+				</audio>
+				<p>Resolução da foto em BGR de cada integrante do grupo, bem como da foto-montagem:</p>
+				<ul>
+					<li>Resolução para  daniel :  262  x  337 PIXELS.  3  camadas.</li>
+					<li>Resolução para  felipe :  1199  x  1184 PIXELS.  3  camadas.</li>
+					<li>Resolução para  rodrigo :  99  x  198 PIXELS.  3  camadas.</li>
+					<li>Resolução para  leonardo :  187  x  365 PIXELS.  3  camadas.</li>
+					<li>Resolução para  group_photo :  1280  x  1280 PIXELS.  3  camadas.</li>
+					<li>Resolução para  beatriz :  613  x  848 PIXELS.  3  camadas.</li>
+				</ul>				
+				<p>&nbsp;</p> 
+				<img src="./bgr_rgb/rgb_beatriz.jpg"/>
+				<img src="./bgr_rgb/rgb_daniel.jpg"/>
+				<img src="./bgr_rgb/rgb_felipe.jpg"/>
+				<img src="./bgr_rgb/rgb_leonardo.jpg"/>
+				<img src="./bgr_rgb/rgb_rodrigo.jpg"/>
+				<img src="./bgr_rgb/rgb_group_photo.jpg"/>
+			</div>
+			
+			<div id="main_div">
+				<h1>Fotos em RGB, YCrCb e HSV dos integrantes do grupo e da foto-montagem</h1>
+				<audio controls>
+					<source src="./audio2.ogg" type="audio/ogg">
+				</audio>				
+				<p>&nbsp;</p> 
+				<img src="./RGB_YCrCb_HSV/HSV_beatriz.jpg"/>
+				<img src="./RGB_YCrCb_HSV/HSV_daniel.jpg"/>
+				<img src="./RGB_YCrCb_HSV/HSV_felipe.jpg"/>
+				<img src="./RGB_YCrCb_HSV/HSV_leonardo.jpg"/>
+				<img src="./RGB_YCrCb_HSV/HSV_rodrigo.jpg"/>
+				<img src="./RGB_YCrCb_HSV/HSV_group_photo.jpg"/>
+			</div>
+			
+			<div id="main_div">
+				<h1>Camada R, G e B das fotos dos integrantes do grupo e da foto-montagem</h1>
+				<audio controls>
+					<source src="./audio3.ogg" type="audio/ogg">
+				</audio>				
+				<p>&nbsp;</p> 
+				<img src="./RGB_Camadas/RGB_Camadas_beatriz.jpg"/>
+				<img src="./RGB_Camadas/RGB_Camadas_daniel.jpg"/>
+				<img src="./RGB_Camadas/RGB_Camadas_felipe.jpg"/>
+				<img src="./RGB_Camadas/RGB_Camadas_leonardo.jpg"/>
+				<img src="./RGB_Camadas/RGB_Camadas_rodrigo.jpg"/>
+				<img src="./RGB_Camadas/RGB_Camadas_group_photo.jpg"/>
+			</div>
+			
+			<div id="main_div">
+				<h1>Canais YCbCr Y, Cr e Cb das fotos dos integrantes do grupo e da foto-montagem</h1>
+				<audio controls>
+					<source src="./audio4.ogg" type="audio/ogg">
+				</audio>				
+				<p>&nbsp;</p> 
+				<img src="./Canais_YCbCr/Canais_YCrCb_beatriz.jpg"/>
+				<img src="./Canais_YCbCr/Canais_YCrCb_daniel.jpg"/>
+				<img src="./Canais_YCbCr/Canais_YCrCb_felipe.jpg"/>
+				<img src="./Canais_YCbCr/Canais_YCrCb_leonardo.jpg"/>
+				<img src="./Canais_YCbCr/Canais_YCrCb_rodrigo.jpg"/>
+				<img src="./Canais_YCbCr/Canais_YCrCb_group_photo.jpg"/>
+			</div>
+			
+			<div id="main_div">
+				<h1>Compressão das fotos dos integrantes do grupo e da foto-montagem</h1>
+				<audio controls>
+					<source src="./audio5.ogg" type="audio/ogg">
+				</audio>				
+				<p>&nbsp;</p> 
+				<img src="./compresssao_imagens/compresssao_imagens_beatriz.jpg"/>
+				<img src="./compresssao_imagens/compresssao_imagens_daniel.jpg"/>
+				<img src="./compresssao_imagens/compresssao_imagens_felipe.jpg"/>
+				<img src="./compresssao_imagens/compresssao_imagens_leonardo.jpg"/>
+				<img src="./compresssao_imagens/compresssao_imagens_rodrigo.jpg"/>
+				<img src="./compresssao_imagens/compresssao_imagens_group_photo.jpg"/>
+				
+				<p>Tabela comparando tamanho dos arquivos</p>
+			</div>
+			
+			<div id="main_div">
+				<h1>DCT - Zera diagonal principal</h1>
+				<audio controls>
+					<source src="./audio6.ogg" type="audio/ogg">
+				</audio>				
+				<p>&nbsp;</p> 
+				<img src="./dct/dct_original.jpg"/>
+				<img src="./dct/dct_zerada.jpg"/>										
+			</div>
+			
+			<div id="main_div">
+				<h1>DCT - Zera diagonal principal + 2</h1>
+				<audio controls>
+					<source src="./audio7.ogg" type="audio/ogg">
+				</audio>				
+				<p>&nbsp;</p> 
+				<img src="./dct2/dct2_original.jpg"/>
+				<img src="./dct2/dct2_zerada.jpg"/>										
+			</div>
+			
+			
+			<div id="main_div">
+				<h1>Código</h1>
+				<audio controls>
+					<source src="./audio8.ogg" type="audio/ogg">
+				</audio>				
+				<p>&nbsp;</p> 
+				<a href="" target="_blank"></a>
+			</div>			
+											
+		</article>
+		
+	</section>
+
+</body>
+	<script src="../jquery-3.4.1.min.js"></script>	
+</html>
