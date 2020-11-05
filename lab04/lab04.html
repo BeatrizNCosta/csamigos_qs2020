@@ -24,7 +24,7 @@
 				<ul>
 					<li>Efetuar a Codicação de Imagem e a Decodicação por DWT e IDWT;</li>
 					<li>Testar funções de Codicação Multinível;</li>
-					<li>Vericar a taxa de compressão só com a Componente de Aproximação.</li>
+					<li>Vericar a taxa de compressão só com a Componente de Aproximação;</li>
 				</ul>
 					
 				</div>			
@@ -58,7 +58,6 @@
 				<audio controls>
 					<source src="./pb_mse_snr_y/audio2.ogg" type="audio/ogg">
 				</audio>
-				<p>Resolução da foto em P&B com DWT de cada integrante do grupo, bem como da foto-montagem:</p>
 				<ul>
 					<li>Beatriz: MSE_Y = 6.92e-13,   PSNR_Luma = 169.73 dB</li>
 					<li>Daniel: MSE_Y = 1.14e-13,   PSNR_Luma = 177.55 dB</li>
@@ -155,21 +154,40 @@
 			</div>
 			
 			<div id="main_div">
-				<h1>DCT - Zera diagonal principal</h1>
+				<h1>Reconstrução de nível 1 colorida para as fotos dos integrantes e para a foto montagem:</h1>
 				<audio controls>
-					<source src="./audio6.ogg" type="audio/ogg">
+					<source src="./reconstrucao_imagens/audio6.ogg" type="audio/ogg">
 				</audio>				
 				<p>&nbsp;</p> 
-				<img src="./dct/dct_original.jpg"/>										
+				<img src="./reconstrucao_imagens/beatriz6.png"/>										
+				<img src="./reconstrucao_imagens/daniel6.png"/>										
+				<img src="./reconstrucao_imagens/felipe6.png"/>										
+				<img src="./reconstrucao_imagens/leonardo6.png"/>										
+				<img src="./reconstrucao_imagens/rodrigo6.png"/>										
+				<img src="./reconstrucao_imagens/grupo6.png"/>										
 			</div>
 			
 			<div id="main_div">
-				<h1>DCT - Zera diagonal principal + 2</h1>
+				<h1>Reconstrução da imagem colorida e cálculo da MSE de cada plano de cor e da PSNR total para as fotos dos intergantes e para a foto montagem:</h1>
 				<audio controls>
-					<source src="./audio7.ogg" type="audio/ogg">
+					<source src="./reconstrucao_imagens/audio7.ogg" type="audio/ogg">
 				</audio>				
 				<p>&nbsp;</p> 
-				<img src="./dct2/dct2_original.jpg"/>										
+				<ul>
+					<li>Beatriz: MSE_R = 6.95e-13, MSE_G = 6.90e-13, MSE_B = 8.12e-13, PSNR_total = 164.71 dB</li>
+					<li>Daniel: MSE_R = 3.53e-13, MSE_G = 7.39e-14, MSE_B = 5.46e-14, PSNR_total = 171.31 dB</li>
+					<li>Felipe: MSE_R = 1.49e-12, MSE_G = 1.34e-12, MSE_B = 1.31e-12, PSNR_total = 161.96 dB</li>
+					<li>Leonardo: MSE_R = 2.66e-13, MSE_G = 2.27e-13, MSE_B = 1.63e-13, PSNR_total = 169.96 dB</li>
+					<li>Rodrigo: MSE_R = 3.28e-13, MSE_G = 1.99e-13, MSE_B = 1.01e-13, PSNR_total = 170.15 dB</li>
+					<li>Foto do Grupo: MSE_R = 1.48e-12, MSE_G = 9.96e-13, MSE_B = 8.57e-13, PSNR_total = 162.90 dB</li>
+				</ul>				
+				<p>&nbsp;</p> 
+				<img src="./reconstrucao_imagens/beatriz7.png"/>										
+				<img src="./reconstrucao_imagens/daniel7.png"/>										
+				<img src="./reconstrucao_imagens/felipe7.png"/>										
+				<img src="./reconstrucao_imagens/leonardo7.png"/>										
+				<img src="./reconstrucao_imagens/rodrigo7.png"/>										
+				<img src="./reconstrucao_imagens/grupo7.png"/>										
 			</div>
 			
 			
@@ -179,20 +197,8 @@
 					<source src="./audio8.ogg" type="audio/ogg">
 				</audio>				
 				<p>&nbsp;</p> 
-				<a href="https://colab.research.google.com/drive/1HX3Aje2H5fkvom071uUI9evGx_7hYjXv#scrollTo=OdYpU1Suur_g" target="_blank">Aqui</a>
+				<a href="https://colab.research.google.com/drive/1RnXf-F917GhzCsq4vrZHElphnpiieyIx?authuser=1" target="_blank">Aqui</a>
 			</div>	
-		
-			<div id="main_div">
-				<h1>Blender</h1>
-				<audio controls>
-					<source src="./audio9.ogg" type="audio/ogg">
-				</audio>
-				<p>&nbsp;</p> 
-				<h3>Vídeo da animação feita no blender</h3>
-				<video width="50%" height="50%" controls="">
-					<source src="./blender.mp4" type="video/mp4">					
-				</video>
-			</div>
 											
 		</article>
 		
