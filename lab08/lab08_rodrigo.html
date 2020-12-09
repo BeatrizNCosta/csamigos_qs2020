@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Neuton:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link rel="stylesheet" type="text/css" href="../index.css">		
+	<title>Laboratório 08 - Rodrigo</title>
+</head>
+
+<body>
+	<header>
+		<h1 class="zoomInDown-element">Laboratório 08 - Rodrigo</h1>
+	</header>
+		
+	<section>		
+		<article>					
+			<div id="main_div">
+				<h1>Áudio original (.wav)</h1>							
+				<p>O áudio analisado refere-se à música de nome Easy, da banda estadunidense Faith No More.</p>
+        
+				<audio controls>
+					<source src="./rodrigo/faith_no_more_easy_846k.wav" type="audio/wav">
+				</audio>
+				
+				<p>&nbsp;</p> 
+				<img src="./rodrigo/rodrigo_formadeonda_easy.png"/>
+				<figcaption>Onda sonora para o áudio em análise.</figcaption>
+				<img src="./rodrigo/rodrigo_espectrograma_easy.png"/>
+				<figcaption>Espectograma para o áudio em análise.</figcaption>
+			</div>
+			
+			<div id="main_div">
+				<h1>Conversão wav em mp3, 128kbps, taxa fixa</h1>
+				<audio controls>
+					<source src="./rodrigo/rodrigo_espectrograma_taxa_fixa.ogg" type="audio/ogg">
+				</audio>
+				
+				<p>&nbsp;</p> 
+				<img src="./rodrigo/rodrigo_formadeonda_easy128k.png"/>
+				<figcaption>Onda sonora para o áudio em análise.</figcaption>
+				<img src="./rodrigo/rodrigo_espectrograma_easy128k.png"/>
+				<figcaption>Espectograma para o áudio em análise.</figcaption>
+			</div>	
+
+			<div id="main_div">
+				<h1>Conversão wav em mp3, 64kbps, taxa fixa</h1>
+				
+				<p>&nbsp;</p> 
+				<img src="./rodrigo/rodrigo_formaonda_easy64k.png"/>
+				<figcaption>Onda sonora para o áudio em análise.</figcaption>
+				<img src="./rodrigo/rodrigo_espectrograma_easy64k.png"/>
+				<figcaption>Espectograma para o áudio em análise.</figcaption>
+			</div>
+
+			<div id="main_div">
+				<h1>Conversão wav em mp3, N=0, taxa variável (150.9 kbps)</h1>
+				<audio controls>
+					<source src="./rodrigo/rodrigo_espectrograma_taxa_variavel.ogg" type="audio/ogg">
+				</audio>				
+				
+				<p>&nbsp;</p> 
+				<img src="./rodrigo/rodrigo_formaonda_easy0.png"/>
+				<figcaption>Onda sonora para o áudio em análise.</figcaption>
+				<img src="./rodrigo/rodrigo_espectrograma_easy0.png"/>
+				<figcaption>Espectograma para o áudio em análise.</figcaption>
+			</div>
+
+			<div id="main_div">
+				<h1>Conversão wav em mp3, N=5, taxa variável (78.3 kbps)</h1>
+				
+				<p>&nbsp;</p> 
+				<img src="./rodrigo/rodrigo_formaonda_easy5.png"/>
+				<figcaption>Onda sonora para o áudio em análise.</figcaption>
+				<img src="./rodrigo/rodrigo_espectrograma_easy5.png"/>
+				<figcaption>Espectograma para o áudio em análise.</figcaption>
+			</div>
+
+			<div id="main_div">
+				<h1>Conversão wav em mp3, N=9, taxa variável (50.3 kbps)</h1>
+				
+				<p>&nbsp;</p> 
+				<img src="./rodrigo/rodrigo_formaonda_easy9.png"/>
+				<figcaption>Onda sonora para o áudio em análise.</figcaption>
+				<img src="./rodrigo/rodrigo_espectrograma_easy9.png"/>
+				<figcaption>Espectograma para o áudio em análise.</figcaption>
+			</div>	
+			
+			<audio controls>
+					<source src="./rodrigo/easy9.mp3" type="audio/mp3">
+			</audio>
+
+			<div id="main_div">
+				<h1>Modificação do tempo</h1>
+	
+				<audio controls>
+					<source src="./rodrigo/rodrigo_modificacao_tempo.ogg" type="audio/ogg">
+				</audio>				
+				
+				<h2>easy0.mp3 - 1x </h2>
+				<p>&nbsp;</p> 
+				<img src="./rodrigo/rodrigo_formaonda_easy0_1x.png"/>
+				<figcaption>Onda sonora para o áudio em análise.</figcaption>
+				<img src="./rodrigo/rodrigo_espectrograma_easy0_1x.png"/>
+				<figcaption>Espectograma para o áudio em análise.</figcaption>
+				
+				<h2>easy0.mp3 - 2x </h2>
+				<p>&nbsp;</p> 
+				<img src="./rodrigo/rodrigo_formaonda_easy0_2x.png"/>
+				<figcaption>Onda sonora para o áudio em análise.</figcaption>
+				<img src="./rodrigo/rodrigo_espectrograma_easy0_2x.png"/>
+				<figcaption>Espectograma para o áudio em análise.</figcaption>
+				
+				<audio controls>
+					<source src="./rodrigo/easy0_v2.mp3" type="audio/mp3">
+				</audio>
+				
+			</div>
+
+			<div id="main_div">
+				<h1>Código - Colab</h1>
+				<p>&nbsp;</p> 
+				<a href="https://drive.google.com/file/d/1ws_i26kVuLZKTKltsNOGesWu4zQBxWaM/view?usp=sharing">Aqui</a>
+			</div>	
+			
+		</article>		
+	</section>
+
+</body>
+	<script src="../jquery-3.4.1.min.js"></script>	
+</html>
