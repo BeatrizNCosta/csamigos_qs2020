@@ -1,0 +1,4 @@
+** Compare os espectrogramas e as taxas de compressão nos arquivos gravados.
+** Apresente as formas de onda e os espectrogramas para os arquivos com tempo modificados
+
+https://drive.google.com/file/d/1ws_i26kVuLZKTKltsNOGesWu4zQBxWaM/view?usp=sharing
